@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float lifeTime = 2f;  // Merminin yaþam süresi
+    public int damage = 20; // Merminin vereceði hasar miktarý
 
     void Start()
     {
@@ -17,10 +18,12 @@ public class Bullet : MonoBehaviour
         // Çarpan nesnenin "Enemy" tag'ine sahip olup olmadýðýný kontrol eder
         if (collision.CompareTag("Enemy"))
         {
-            // Konsolda vurulan düþman hakkýnda bilgi verir
-            Debug.Log("Bullet hit: " + collision.gameObject.name);
-            // Çarpan düþman nesnesini yok eder
-            Destroy(collision.gameObject);
+            // EnemyHealth script'ini al ve hasar ver
+            EnemyHealth enemyHealth = collision.GetComponent<EnemyHealth>();
+            if (enemyHealth != null) {
+                enemyHealth.TakeDamage(damage);
+            }
+
             // Mermiyi yok eder
             Destroy(gameObject);
         }
