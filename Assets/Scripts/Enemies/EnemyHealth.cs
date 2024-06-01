@@ -7,20 +7,38 @@ public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100;  // Düþmanýn maksimum saðlýðý
     public int currentHealth;  // Düþmanýn mevcut saðlýðý
-    public Image healthBarFront;  // Yeþil saðlýk barý Image componenti
+    public Image healthBarFront;  // Düþmanýn üzerindeki saðlýk barý
+    private float initialHealthBarWidth;  // Saðlýk barýnýn baþlangýç geniþliði
+    public RectTransform healthBarCanvas;  // Saðlýk barýnýn bulunduðu canvas
+    private Vector3 initialHealthBarPosition;  // Saðlýk barýnýn baþlangýç pozisyonu
 
     void Start()
     {
         // Baþlangýçta düþmanýn saðlýðýný maksimum deðere ayarla
         currentHealth = maxHealth;
+
+        // Saðlýk barýnýn baþlangýç geniþliðini kaydet
+        initialHealthBarWidth = healthBarFront.rectTransform.sizeDelta.x;
+
+        // Saðlýk barýnýn baþlangýç pozisyonunu kaydet
+        initialHealthBarPosition = healthBarCanvas.localPosition;
+
         // Saðlýk barýný güncelle
         UpdateHealthBar();
+    }
+
+    void Update()
+    {
+        // Saðlýk barýnýn pozisyonunu sabitle
+        healthBarCanvas.localPosition = initialHealthBarPosition;
+        healthBarCanvas.localRotation = Quaternion.identity;
     }
 
     public void TakeDamage(int amount)
     {
         // Alýnan hasarý mevcut saðlýktan düþ
         currentHealth -= amount;
+
         // Saðlýk barýný güncelle
         UpdateHealthBar();
 
@@ -34,14 +52,15 @@ public class EnemyHealth : MonoBehaviour
     void UpdateHealthBar()
     {
         // Saðlýk barýnýn geniþliðini güncelle
-        healthBarFront.rectTransform.sizeDelta = new Vector2((currentHealth / (float)maxHealth) * 100f, healthBarFront.rectTransform.sizeDelta.y);
+        float healthPercent = (currentHealth / (float)maxHealth);
+        float newWidth = initialHealthBarWidth * healthPercent;
+        healthBarFront.rectTransform.sizeDelta = new Vector2(newWidth, healthBarFront.rectTransform.sizeDelta.y);
     }
 
     void Die()
     {
-        // Düþman öldüðünde yapýlacak iþlemler
+        // Düþmanýn öldüðünde yapýlacak iþlemler
         Debug.Log("Enemy died!");
-        // Düþmaný yok et
         Destroy(gameObject);
     }
 }

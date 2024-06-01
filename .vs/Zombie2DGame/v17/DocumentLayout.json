@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|c:\\users\\sinan\\onedrive\\documents\\zombie2dgame\\assets\\scripts\\enemies\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\assets\\scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|c:\\users\\sinan\\onedrive\\documents\\zombie2dgame\\assets\\scripts\\enemies\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\assets\\scripts\\enemies\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\assets\\scripts\\enemies\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|c:\\users\\sinan\\onedrive\\documents\\zombie2dgame\\assets\\scripts\\enemies\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\assets\\scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\assets\\scripts\\enemies\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F101E555-BB94-21FC-329C-6F3C0E09C50E}|Assembly-CSharp.csproj|C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyHealth.cs",
               "ToolTip": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\Assets\\Scripts\\Enemies\\EnemyHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyHealth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T23:03:56.429Z",
               "EditorCaption": ""
@@ -73,9 +73,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealth.cs",
               "ToolTip": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\Assets\\Scripts\\Player\\PlayerHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAaAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwCsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T22:25:03.229Z"
+              "WhenOpened": "2024-05-31T22:25:03.229Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -91,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\Assets\\Scripts\\Enemies\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Bullet.cs",
@@ -116,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\Assets\\Scripts\\Enemies\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemySpawner.cs",
@@ -128,15 +129,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\Assets\\Scripts\\Enemies\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy.cs",
               "ToolTip": "C:\\Users\\sinan\\OneDrive\\Documents\\Zombie2DGame\\Assets\\Scripts\\Enemies\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T12:12:44.517Z"
+              "WhenOpened": "2024-05-31T12:12:44.517Z",
+              "EditorCaption": ""
             }
           ]
         }
