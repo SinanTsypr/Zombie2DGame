@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     private float initialHealthBarWidth;  // Saðlýk barýnýn baþlangýç geniþliði
     public RectTransform healthBarCanvas;  // Saðlýk barýnýn bulunduðu canvas
     private Vector3 initialHealthBarPosition;  // Saðlýk barýnýn baþlangýç pozisyonu
+    private GameManager gameManager;  // GameManager referansý
 
     void Start()
     {
@@ -25,6 +26,9 @@ public class EnemyHealth : MonoBehaviour
 
         // Saðlýk barýný güncelle
         UpdateHealthBar();
+
+        // GameManager referansýný bul
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -59,8 +63,17 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        // Düþmanýn öldüðünde yapýlacak iþlemler
-        Debug.Log("Enemy died!");
+        // GameManager'deki AddScore metodunu çaðýr
+        if (gameManager != null)
+        {
+            gameManager.AddScore(1);  // 1 puan ekle
+        }
+        else
+        {
+            Debug.LogError("GameManager is not assigned in EnemyHealth script.");
+        }
+
+        // Düþmaný yok et
         Destroy(gameObject);
     }
 }

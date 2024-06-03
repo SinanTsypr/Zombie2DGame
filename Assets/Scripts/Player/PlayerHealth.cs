@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     private float initialHealthBarWidth;  // Ekranýn sol üstündeki saðlýk barýnýn baþlangýç geniþliði
     private float initialHealthBarWidthInWorld;  // Karakterin üzerindeki saðlýk barýnýn baþlangýç geniþliði
 
+    public GameManager gameManager;  // GameManager referansý
+
     void Start()
     {
         // Baþlangýçta oyuncunun saðlýðýný maksimum deðere ayarla
@@ -57,8 +59,17 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        // Oyuncunun öldüðünde yapýlacak iþlemler (örneðin, oyunu bitir)
         Debug.Log("Player died!");
-        Time.timeScale = 0f;  // Oyunu durdur
+
+        // GameManager'deki GameOver metodunu çaðýr
+        if (gameManager != null)
+        {
+            Debug.Log("Calling GameOver method on GameManager.");
+            gameManager.GameOver();
+        }
+        else
+        {
+            Debug.LogError("GameManager is not assigned in PlayerHealth script.");
+        }
     }
 }
